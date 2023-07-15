@@ -1,0 +1,303 @@
+const nurses = [
+    {
+      name: "Klaus",
+      id: 1,
+      age: 25,
+      yearsExperience: 5,
+      role: "chief",
+      contractTime: "100%",
+      availability: "available"
+      specialist: true
+    },
+    {
+      name: "Greta",
+      id: 2,
+      age: 30,
+      yearsExperience: 10,
+      role: "sub-chief",
+      contractTime: "100%",
+      availability: "available" 
+      specialist: true
+   },
+    {
+      name: "Lukas",
+      id: 3,
+      age: 28,
+      yearsExperience: 3,
+      role: "professor",
+      contractTime: "75%",
+      availability: "off-duty",
+      specialist: true
+    },
+    {
+      name: "Anna",
+      id: 4,
+      age: 32,
+      yearsExperience: 8,
+      role: "nurse",
+      contractTime: "75%",
+      availability: "available"
+      specialist: true
+    },
+    {
+      name: "Felix",
+      id: 5,
+      age: 27,
+      yearsExperience: 2,
+      role: "nurse",
+      contractTime: "25%",
+      availability: "available"
+      specialist: false
+    },
+    {
+      name: "Sophie",
+      id: 6,
+      age: 29,
+      yearsExperience: 6,
+      role: "nurse",
+      contractTime: "100%",
+      availability: "off-duty"
+      specialist: false
+    },
+    {
+      name: "Max",
+      id: 7,
+      age: 31,
+      yearsExperience: 15,
+      role: "nurse",
+      contractTime: "100%",
+      availability: "available"
+      specialist: false
+    },
+    {
+      name: "Nora",
+      id: 8,
+      age: 26,
+      yearsExperience: 4,
+      role: "professor",
+      contractTime: "75%",
+      availability: "sick"
+      specialist: false
+    },
+    {
+      name: "Sebastian",
+      id: 9,
+      age: 33,
+      yearsExperience: 12,
+      role: "student",
+      contractTime: "100%",
+      availability: "available"
+      specialist: true
+    },
+    {
+      name: "Hannah",
+      id: 10,
+      age: 24,
+      yearsExperience: 1,
+      role: "professor",
+      contractTime: "75%",
+      availability: "available"
+      specialist: false
+    },
+    {
+      name: "Maria",
+      id: 11,
+      age: 32,
+      yearsExperience: 9,
+      role: "sub-chief",
+      contractTime: "100%",
+      availability: "available"
+      specialist: false
+    },
+    {
+      name: "Carlos",
+      id: 12,
+      age: 29,
+      yearsExperience: 5,
+      role: "nurse",
+      contractTime: "75%",
+      availability: "off-duty"
+      specialist: false
+    },
+    {
+      name: "Ana",
+      id: 13,
+      age: 26,
+      yearsExperience: 3,
+      role: "professor",
+      contractTime: "50%",
+      availability: "vacation"
+      specialist: false
+    },
+    {
+      name: "João",
+      id: 14,
+      age: 28,
+      yearsExperience: 7,
+      role: "student",
+      contractTime: "25%",
+      availability: "sick"
+      specialist: false
+    },
+    {
+      name: "Sofia",
+      id: 15,
+      age: 31,
+      yearsExperience: 4,
+      role: "nurse",
+      contractTime: "100%",
+      availability: "available"
+      specialist: false
+    },
+    {
+      name: "Pedro",
+      id: 16,
+      age: 27,
+      yearsExperience: 2,
+      role: "professor",
+      contractTime: "75%",
+      availability: "vacation"
+      specialist: false
+    },
+    {
+      name: "Mariana",
+      id: 17,
+      age: 33,
+      yearsExperience: 6,
+      role: "nurse",
+      contractTime: "50%",
+      availability: "off-duty",
+      specialist: false
+    },
+    {
+      name: "Rafael",
+      id: 18,
+      age: 24,
+      yearsExperience: 1,
+      role: "student",
+      contractTime: "100%",
+      availability: "available"
+      specialist: false
+    },
+    {
+      name: "Lara",
+      id: 19,
+      age: 30,
+      yearsExperience: 8,
+      role: "nurse",
+      contractTime: "75%",
+      availability: "available"
+      specialist: false,
+    },
+    {
+      name: "Gustavo",
+      id: 20,
+      age: 25,
+      yearsExperience: 3,
+      role: "sub-chief",
+      contractTime: "100%",
+      availability: "off-duty",
+      specialist: true
+    },
+    {
+        name: "Emma",
+        id: 21,
+        age: 28,
+        yearsExperience: 7,
+        role: "nurse",
+        contractTime: "100%",
+        availability: "available",
+        specialist: false
+      },
+      {
+        name: "Oliver",
+        id: 22,
+        age: 31,
+        yearsExperience: 9,
+        role: "chief",
+        contractTime: "100%",
+        availability: "available",
+        specialist: true
+      },
+      {
+        name: "Sophia",
+        id: 23,
+        age: 26,
+        yearsExperience: 4,
+        role: "nurse",
+        contractTime: "75%",
+        availability: "off-duty",
+        specialist: false
+      },
+      {
+        name: "Noah",
+        id: 24,
+        age: 29,
+        yearsExperience: 5,
+        role: "professor",
+        contractTime: "75%",
+        availability: "available",
+        specialist: true
+      },
+      {
+        name: "Isabella",
+        id: 25,
+        age: 30,
+        yearsExperience: 8,
+        role: "sub-chief",
+        contractTime: "100%",
+        availability: "available",
+        specialist: true
+      },
+      {
+        name: "William",
+        id: 26,
+        age: 27,
+        yearsExperience: 3,
+        role: "nurse",
+        contractTime: "100%",
+        availability: "off-duty",
+        specialist: false
+      },
+      {
+        name: "Mia",
+        id: 27,
+        age: 32,
+        yearsExperience: 10,
+        role: "professor",
+        contractTime: "75%",
+        availability: "available",
+        specialist: true
+      },
+      {
+        name: "James",
+        id: 28,
+        age: 25,
+        yearsExperience: 2,
+        role: "nurse",
+        contractTime: "25%",
+        availability: "available",
+        specialist: false
+      },
+      {
+        name: "Ava",
+        id: 29,
+        age: 33,
+        yearsExperience: 12,
+        role: "nurse",
+        contractTime: "100%",
+        availability: "available",
+        specialist: false
+      },
+      {
+        name: "Benjamin",
+        id: 30,
+        age: 24,
+        yearsExperience: 1,
+        role: "student",
+        contractTime: "75%",
+        availability: "available",
+        specialist: true
+      }
+
+  ];
